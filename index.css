@@ -1017,7 +1017,7 @@
 }
 
 .footer-logo {
-  width: 140px; /* adjust as needed */
+  width: 140px; 
   height: auto;
   mix-blend-mode: lighten;
   filter: brightness(1.2) contrast(1.1);
