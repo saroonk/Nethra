@@ -793,25 +793,37 @@
   });
 
 
-  function filterProducts(category) {
-    $(".product-card").each(function () {
-      const itemCategory = $(this).data("category");
-      if (itemCategory === category) {
-        $(this).parent().show(); 
-      } else {
-        $(this).parent().hide();
-      }
-    });
+function filterProducts(category) {
+  let visibleCount = 0;
 
-    owl.trigger('refresh.owl.carousel');
-  }
-
-  $('.category-tab').on('click', function () {
-    $('.category-tab').removeClass('active');
-    $(this).addClass('active');
-    const category = $(this).data('category');
-    filterProducts(category);
+  $(".product-card").each(function () {
+    const itemCategory = $(this).data("category");
+    const isVisible = itemCategory === category;
+    $(this).parent().toggle(isVisible);
+    if (isVisible) visibleCount++;
   });
+
+  owl.trigger('refresh.owl.carousel');
+
+  // Disable custom nav if not enough items
+  if (visibleCount <= 1) {
+    $('.custom-prev, .custom-next').addClass('disabled');
+  } else {
+    $('.custom-prev, .custom-next').removeClass('disabled');
+  }
+}
+
+
+$('.category-tab').on('click', function () {
+  $('.category-tab').removeClass('active');
+  $(this).addClass('active');
+  const category = $(this).data('category');
+  filterProducts(category);
+
+  // Reset carousel to the first slide after filtering
+  owl.trigger('to.owl.carousel', [0]);
+});
+
 
 
   filterProducts('diamond');
