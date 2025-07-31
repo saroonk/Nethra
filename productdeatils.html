@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="productdetails.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+
+
+      <div class="top-banner d-flex justify-content-between px-5 py-md-4 py-2">
+    <div>FREE SHIPPING OVERS $99</div>
+    <div>Mid-Season Sale Up to 70% OFF.</div>
+  </div>
+
+
+<div class="main-navbar">
+  <div class="container-fluid px-4">
+    <div class="row align-items-center ">
+  
+      <div class="col-md-2 col-2 navbar-logo text-md-center text-center pb-2  mb-md-0">
+        <img src="images/61863a29d943ff0395e553b90e533f322c59e3b4.png" alt="Logo">
+      </div>
+
+      <div class="col-md-8 col-5 ">
+
+        <div class="search-wrapper mb-2 ms-md-0 ms-3">
+          <input type="text" class="form-control search-bar" placeholder="What are you looking for Today? e.g dimond ring">
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+ 
+        <div class="nav-items d-none d-md-flex">
+          <a href="#">THEME DEMO</a>
+          <a href="#">SHOP</a>
+          <a href="#">PRODUCTHOT</a>
+          <a href="#">BLOG</a>
+          <a href="#">PAGES</a>
+          <a href="#">NEW IN</a>
+          <a href="#">TREND</a>
+          <a href="#">COLLECTIONS</a>
+          <a href="#">BUY ELLA</a>
+        </div>
+      </div>
+
+
+      <div class="col-md-2 col-5 d-flex justify-content-md-center justify-content-evenly align-items-start  mt-md-0">
+        <div class="icon-badge">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="icon-badge">
+          <i class="fas fa-heart"></i>
+          <span class="badge rounded-pill">1</span>
+        </div>
+        <div class="icon-badge">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge rounded-pill">2</span>
+        </div>
+
+    
+        <button class="btn text-white d-md-none ms-2 d-flex j justify-content-center align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="collapse d-md-none" id="mobileNav">
+    <div class="nav-items d-flex flex-column align-items-center mt-4 ">
+      <a href="#">THEME DEMO</a>
+      <a href="#">SHOP</a>
+      <a href="#">PRODUCTHOT</a>
+      <a href="#">BLOG</a>
+      <a href="#">PAGES</a>
+      <a href="#">NEW IN</a>
+      <a href="#">TREND</a>
+      <a href="#">COLLECTIONS</a>
+      <a href="#">BUY ELLA</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class="container my-5 pt-5">
+        <div class="row">
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+              
+                <div class="product-image-main mb-3">
+                    <img id="mainImage" src="images/16ca32a7120347f6470721cf2d3ba22caa5ea3f7.jpg" alt="Product Image" class="img-fluid">
+                </div>
+                
+   
+                <div class="sub-images px-md-5 px-3">
+                    <div class="owl-carousel owl-theme" id="subImagesCarousel">
+                        <div class="sub-image active" onclick="changeImage(this, 'images/16ca32a7120347f6470721cf2d3ba22caa5ea3f7.jpg')">
+                            <img src="images/16ca32a7120347f6470721cf2d3ba22caa5ea3f7.jpg" alt="Product View 1" class="img-fluid">
+                        </div>
+                        <div class="sub-image" onclick="changeImage(this, 'images/276c5b3eec458517d510eca952b439d0e582492a.png')">
+                            <img src="images/276c5b3eec458517d510eca952b439d0e582492a.png" alt="Product View 2" class="img-fluid">
+                        </div>
+                        <div class="sub-image" onclick="changeImage(this, 'images/285f6e42202de6d5b211f8390fe26d3b14f1d04f.png')">
+                            <img src="images/285f6e42202de6d5b211f8390fe26d3b14f1d04f.png" alt="Product View 3" class="img-fluid">
+                        </div>
+                        <div class="sub-image" onclick="changeImage(this, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=400&fit=crop')">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=400&fit=crop" alt="Product View 4" class="img-fluid">
+                        </div>
+                        <div class="sub-image" onclick="changeImage(this, 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&h=400&fit=crop')">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&h=400&fit=crop" alt="Product View 5" class="img-fluid">
+                        </div>
+                        <div class="sub-image" onclick="changeImage(this, 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=400&fit=crop')">
+                            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=400&fit=crop" alt="Product View 6" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="col-lg-6 col-md-6">
+                <div class="product-details">
+                 
+                    <h1 class="product-title mb-3">Premium Bangles</h1>
+                    
+       
+                    <div class="mb-3">
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="text-muted ms-2">(4.5) 324 Reviews</span>
+                    </div>
+                    
+       
+                    <div class="mb-4">
+                        <span class="price">$149.99</span>
+                        <span class="original-price">$199.99</span>
+                        <span class="discount-badge ms-2">25% OFF</span>
+                    </div>
+        
+                    <div class="mb-4">
+                       <p class="text-muted">Embrace elegance with these handcrafted bangles, designed for timeless style and everyday comfort. Perfect for traditional wear or modern fashion statements.</p>
+
+<p class="text-muted">Discover the charm of premium bangles featuring intricate detailing, lightweight design, and a flawless finish. Ideal for festive occasions and daily grace.</p>
+
+<p class="text-muted">Enhance your look with these exquisite bangles that blend tradition and trend. Crafted for durability, style, and unmatched sophistication.</p>
+
+                    </div>
+                    
+                 
+                   
+                    
+           
+                    <!-- <div class="mb-4">
+                        <h6 class="fw-bold">Size:</h6>
+                        <div class="d-flex gap-2 mt-2">
+                            <button class="btn btn-outline-secondary btn-sm">Small</button>
+                            <button class="btn btn-primary btn-sm">Medium</button>
+                            <button class="btn btn-outline-secondary btn-sm">Large</button>
+                        </div>
+                    </div> -->
+                     
+             
+                    <div class="mb-4">
+                        <h6 class="fw-bold">Quantity:</h6>
+                        <div class="quantity-control d-inline-flex align-items-center mt-2">
+                            <button class="quantity-btn" onclick="decreaseQuantity()">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn" onclick="increaseQuantity()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+         
+                    <div class="mb-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <button class="btn btn-cart w-100">
+                                    <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <button class="btn btn-buy w-100">
+                                    <i class="fas fa-bolt me-2"></i>Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="mb-4">
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="far fa-heart me-1"></i>Add to Wishlist
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-share-alt me-1"></i>Share
+                        </button>
+                    </div>
+                    
+<!--   
+                    <div class="product-features">
+                        <h6 class="fw-bold mb-3">Key Features:</h6>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Active Noise Cancellation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>30-Hour Battery Life</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Wireless Bluetooth 5.0</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Comfort Padding</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fast Charging (15min = 3hrs)</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+<!-- 
+        <div class="product-tabs">
+            <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab">Specifications</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reviews</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="productTabsContent">
+                <div class="tab-pane fade show active p-4" id="description" role="tabpanel">
+                    <h5>Product Description</h5>
+                    <p>These premium wireless headphones deliver exceptional audio quality with deep bass and crystal-clear highs. The advanced active noise cancellation technology blocks out ambient noise, allowing you to immerse yourself completely in your music or calls.</p>
+                    <p>Designed for all-day comfort, the soft ear cushions and adjustable headband ensure a perfect fit for any head size. The 30-hour battery life means you can enjoy uninterrupted listening for days, and the quick charge feature gives you hours of playback with just minutes of charging.</p>
+                </div>
+                <div class="tab-pane fade p-4" id="specifications" role="tabpanel">
+                    <h5>Technical Specifications</h5>
+                    <ul>
+                        <li><strong>Driver Size:</strong> 40mm</li>
+                        <li><strong>Frequency Response:</strong> 20Hz - 20kHz</li>
+                        <li><strong>Battery Life:</strong> 30 hours (ANC on), 40 hours (ANC off)</li>
+                        <li><strong>Charging Time:</strong> 2 hours (full charge)</li>
+                        <li><strong>Bluetooth Version:</strong> 5.0</li>
+                        <li><strong>Weight:</strong> 250g</li>
+                        <li><strong>Warranty:</strong> 2 years</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade p-4" id="reviews" role="tabpanel">
+                    <h5>Customer Reviews</h5>
+                    <div class="review-item mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <strong>John Doe</strong>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-muted mt-2">Amazing sound quality and comfort. The noise cancellation works perfectly for my daily commute. Highly recommended!</p>
+                    </div>
+                    <div class="review-item mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <strong>Sarah Smith</strong>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-muted mt-2">Great headphones overall. Battery life is impressive and the build quality feels premium. Only minor issue is they can feel a bit tight after long sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer-section py-5 text-white">
+  <div class="container text-center mb-5">
+    <img src="images/61863a29d943ff0395e553b90e533f322c59e3b4 (1).png" alt="NETHRA Logo" class="footer-logo mb-3">
+    <p class="footer-follow-text ">FOLLOW US ON</p>
+    <div class="d-flex justify-content-center gap-3 mt-3 social-icons">
+      <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-twitch"></i></a>
+    </div>
+  </div>
+
+  <div class="container pt-4 px-3">
+    <div class="row gy-4 text-start">
+      <div class="col-6 col-md-2">
+        <h6 >About</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Our Story</a></li>
+          <li><a href="#" class="footer-link">Careers</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+          <li><a href="#" class="footer-link">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Shop</h6>
+        <ul class="list-unstyled ">
+          <li><a href="#" class="footer-link">Bibendumetos</a></li>
+          <li><a href="#" class="footer-link">Pellentes Habitanto</a></li>
+          <li><a href="#" class="footer-link">Senectus</a></li>
+          <li><a href="#" class="footer-link">Consequatod</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Popular Search</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">18K White Gold</a></li>
+          <li><a href="#" class="footer-link">Rose Gold</a></li>
+          <li><a href="#" class="footer-link">Wedding Jewelry</a></li>
+          <li><a href="#" class="footer-link">Luxury Watches</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Help</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Sizing Help</a></li>
+          <li><a href="#" class="footer-link">Returns & Exchanges</a></li>
+          <li><a href="#" class="footer-link">Shipping</a></li>
+          <li><a href="#" class="footer-link">Theme FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Contact Us</h6>
+        <ul class="list-unstyled">
+          <li class="footer-link">TEXT: (090) 123-EIIA</li>
+          <li class="footer-link">Email: example@domain.com</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Address</h6>
+        <ul class="list-unstyled">
+          <li class="footer-link">685 Market Street</li>
+          <li class="footer-link">San Francisco, CA</li>
+          <li class="footer-link">94105, US</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+   
+        $(document).ready(function(){
+            $("#subImagesCarousel").owlCarousel({
+                items: 4,
+                loop: false,
+                margin: 10,
+                nav: true,
+                dots: false,
+                navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    480: {
+                        items: 3,
+                        nav: true
+                    },
+                    768: {
+                        items: 4,
+                        nav: true
+                    },
+                    992: {
+                        items: 4,
+                        nav: true
+                    }
+                }
+            });
+        });
+        
+
+        function changeImage(element, imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+
+            document.querySelectorAll('.sub-image').forEach(img => {
+                img.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+        
+
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue < 10) {
+                quantityInput.value = currentValue + 1;
+            }
+        }
+        
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+        
+  
+
+        
+  
+        document.querySelectorAll('.btn-outline-secondary').forEach(size => {
+            size.addEventListener('click', function() {
+                if (this.textContent.trim() === 'Small' || this.textContent.trim() === 'Medium' || this.textContent.trim() === 'Large') {
+                    // Remove active class from all size buttons
+                    document.querySelectorAll('.btn-outline-secondary').forEach(s => {
+                        if (s.textContent.trim() === 'Small' || s.textContent.trim() === 'Medium' || s.textContent.trim() === 'Large') {
+                            s.classList.remove('btn-primary');
+                            s.classList.add('btn-outline-secondary');
+                        }
+                    });
+                    // Add active class to selected size
+                    this.classList.remove('btn-outline-secondary');
+                    this.classList.add('btn-primary');
+                }
+            });
+        });
+        
+   
+        document.querySelector('.btn-cart').addEventListener('click', function() {
+            const quantity = document.getElementById('quantity').value;
+            alert(`Added ${quantity} item(s) to cart!`);
+        });
+
+        document.querySelector('.btn-buy').addEventListener('click', function() {
+            const quantity = document.getElementById('quantity').value;
+            alert(`Proceeding to checkout with ${quantity} item(s)!`);
+        });
+    </script>
+</body>
+</html>
