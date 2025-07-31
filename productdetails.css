@@ -167,7 +167,7 @@
         
         .sub-image:hover,
         .sub-image.active {
-            border-color: #0d6efd;
+            border-color: #0c0c0c;
             transform: scale(1.05);
         }
         

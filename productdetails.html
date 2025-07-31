@@ -465,33 +465,33 @@
 
         
   
-        document.querySelectorAll('.btn-outline-secondary').forEach(size => {
-            size.addEventListener('click', function() {
-                if (this.textContent.trim() === 'Small' || this.textContent.trim() === 'Medium' || this.textContent.trim() === 'Large') {
-                    // Remove active class from all size buttons
-                    document.querySelectorAll('.btn-outline-secondary').forEach(s => {
-                        if (s.textContent.trim() === 'Small' || s.textContent.trim() === 'Medium' || s.textContent.trim() === 'Large') {
-                            s.classList.remove('btn-primary');
-                            s.classList.add('btn-outline-secondary');
-                        }
-                    });
-                    // Add active class to selected size
-                    this.classList.remove('btn-outline-secondary');
-                    this.classList.add('btn-primary');
-                }
-            });
-        });
+        // document.querySelectorAll('.btn-outline-secondary').forEach(size => {
+        //     size.addEventListener('click', function() {
+        //         if (this.textContent.trim() === 'Small' || this.textContent.trim() === 'Medium' || this.textContent.trim() === 'Large') {
+                   
+        //             document.querySelectorAll('.btn-outline-secondary').forEach(s => {
+        //                 if (s.textContent.trim() === 'Small' || s.textContent.trim() === 'Medium' || s.textContent.trim() === 'Large') {
+        //                     s.classList.remove('btn-primary');
+        //                     s.classList.add('btn-outline-secondary');
+        //                 }
+        //             });
+              
+        //             this.classList.remove('btn-outline-secondary');
+        //             this.classList.add('btn-primary');
+        //         }
+        //     });
+        // });
         
    
-        document.querySelector('.btn-cart').addEventListener('click', function() {
-            const quantity = document.getElementById('quantity').value;
-            alert(`Added ${quantity} item(s) to cart!`);
-        });
+        // document.querySelector('.btn-cart').addEventListener('click', function() {
+        //     const quantity = document.getElementById('quantity').value;
+        //     alert(`Added ${quantity} item(s) to cart!`);
+        // });
 
-        document.querySelector('.btn-buy').addEventListener('click', function() {
-            const quantity = document.getElementById('quantity').value;
-            alert(`Proceeding to checkout with ${quantity} item(s)!`);
-        });
+        // document.querySelector('.btn-buy').addEventListener('click', function() {
+        //     const quantity = document.getElementById('quantity').value;
+        //     alert(`Proceeding to checkout with ${quantity} item(s)!`);
+        // });
     </script>
 </body>
 </html>
