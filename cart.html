@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+          <div class="top-banner d-flex justify-content-between px-5 py-md-4 py-2">
+    <div>FREE SHIPPING OVERS $99</div>
+    <div>Mid-Season Sale Up to 70% OFF.</div>
+  </div>
+
+
+<div class="main-navbar">
+  <div class="container-fluid px-4">
+    <div class="row align-items-center ">
+  
+      <div class="col-md-2 col-2 navbar-logo text-md-center text-center pb-2  mb-md-0">
+        <img src="images/61863a29d943ff0395e553b90e533f322c59e3b4.png" alt="Logo">
+      </div>
+
+      <div class="col-md-8 col-5 ">
+
+        <div class="search-wrapper mb-2 ms-md-0 ms-3">
+          <input type="text" class="form-control search-bar" placeholder="What are you looking for Today? e.g dimond ring">
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+ 
+        <div class="nav-items d-none d-md-flex">
+          <a href="#">THEME DEMO</a>
+          <a href="#">SHOP</a>
+          <a href="#">PRODUCTHOT</a>
+          <a href="#">BLOG</a>
+          <a href="#">PAGES</a>
+          <a href="#">NEW IN</a>
+          <a href="#">TREND</a>
+          <a href="#">COLLECTIONS</a>
+          <a href="#">BUY ELLA</a>
+        </div>
+      </div>
+
+
+      <div class="col-md-2 col-5 d-flex justify-content-md-center justify-content-evenly align-items-start  mt-md-0">
+        <div class="icon-badge">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="icon-badge">
+          <i class="fas fa-heart"></i>
+          <span class="badge rounded-pill">1</span>
+        </div>
+        <div class="icon-badge">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge rounded-pill">2</span>
+        </div>
+
+    
+        <button class="btn text-white d-md-none ms-2 d-flex j justify-content-center align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="collapse d-md-none" id="mobileNav">
+    <div class="nav-items d-flex flex-column align-items-center mt-4 ">
+      <a href="#">THEME DEMO</a>
+      <a href="#">SHOP</a>
+      <a href="#">PRODUCTHOT</a>
+      <a href="#">BLOG</a>
+      <a href="#">PAGES</a>
+      <a href="#">NEW IN</a>
+      <a href="#">TREND</a>
+      <a href="#">COLLECTIONS</a>
+      <a href="#">BUY ELLA</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div class="container-fluid cart-container mt-5">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+        
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <div class="cart-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="images/285f6e42202de6d5b211f8390fe26d3b14f1d04f.png" 
+                                 alt="" 
+                                 class="product-image">
+                        </div>
+                        <div class="col-md-7 col-sm-6 product-details">
+                            <h5 class="product-title">Ordinary Silver Coated Chain </h5>
+                            <!-- <div class="product-size">Size: XL</div> -->
+                            <div class="product-qty">Qty: 1</div>
+                            <div class="product-price">₹1099.00</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 delete-btn-container">
+                            <button class="delete-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+     
+                <div class="cart-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="images/39ab5c8a107495e7df2e095dbbef00619add5c14.jpg" 
+                                 alt="" 
+                                 class="product-image">
+                        </div>
+                        <div class="col-md-7 col-sm-6 product-details">
+                            <h5 class="product-title">Premium Gold Bangles</h5>
+                            <!-- <div class="product-size">Size: M</div> -->
+                            <div class="product-qty">Qty: 1</div>
+                            <div class="product-price">₹899.00</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 delete-btn-container">
+                            <button class="delete-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-lg-4 col-md-5">
+                <div class="order-summary">
+                    <h4 class="summary-title">Order Summary</h4>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>₹1998.00</span>
+                    </div>
+                    
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>₹1998.00</span>
+                    </div>
+                    
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+<footer class="footer-section py-5 text-white">
+  <div class="container text-center mb-5">
+    <img src="images/61863a29d943ff0395e553b90e533f322c59e3b4 (1).png" alt="NETHRA Logo" class="footer-logo mb-3">
+    <p class="footer-follow-text ">FOLLOW US ON</p>
+    <div class="d-flex justify-content-center gap-3 mt-3 social-icons">
+      <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-twitch"></i></a>
+    </div>
+  </div>
+
+  <div class="container pt-4 px-3">
+    <div class="row gy-4 text-start">
+      <div class="col-6 col-md-2">
+        <h6 >About</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Our Story</a></li>
+          <li><a href="#" class="footer-link">Careers</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+          <li><a href="#" class="footer-link">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Shop</h6>
+        <ul class="list-unstyled ">
+          <li><a href="#" class="footer-link">Bibendumetos</a></li>
+          <li><a href="#" class="footer-link">Pellentes Habitanto</a></li>
+          <li><a href="#" class="footer-link">Senectus</a></li>
+          <li><a href="#" class="footer-link">Consequatod</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Popular Search</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">18K White Gold</a></li>
+          <li><a href="#" class="footer-link">Rose Gold</a></li>
+          <li><a href="#" class="footer-link">Wedding Jewelry</a></li>
+          <li><a href="#" class="footer-link">Luxury Watches</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Help</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Sizing Help</a></li>
+          <li><a href="#" class="footer-link">Returns & Exchanges</a></li>
+          <li><a href="#" class="footer-link">Shipping</a></li>
+          <li><a href="#" class="footer-link">Theme FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Contact Us</h6>
+        <ul class="list-unstyled">
+          <li class="footer-link">TEXT: (090) 123-EIIA</li>
+          <li class="footer-link">Email: example@domain.com</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 >Address</h6>
+        <ul class="list-unstyled">
+          <li class="footer-link">685 Market Street</li>
+          <li class="footer-link">San Francisco, CA</li>
+          <li class="footer-link">94105, US</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
