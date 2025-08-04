@@ -304,7 +304,7 @@
         }
 
         .premium-select:focus {
-            border-color: #050505;
+            border-color: #0f0f0f;
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
             transform: translateY(-1px);
         }

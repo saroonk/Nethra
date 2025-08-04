@@ -295,7 +295,7 @@
         }
         
         .btn-buy:hover {
-            background: linear-gradient(45deg, #ddad65, #d08d2a);
+            background: linear-gradient(45deg, #dab172, #d08d2a);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(253, 126, 20, 0.3);
             color: white;
